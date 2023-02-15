@@ -1,5 +1,13 @@
-# persona
-Desafío Técnico Reba
+# Desafío Técnico Reba - Spring REST API CRUD Persona
+
+Este proyecto es una implementación CRUD usando api rest
+
+
+# Tecnologías utilizadas
+
+
+<a href="https://spring.io/projects/spring-boot">Spring Boot</a>
+
 
 # Pasos para ejecutar de forma local
 
