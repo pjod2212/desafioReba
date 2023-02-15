@@ -8,8 +8,8 @@ Este proyecto es una implementación CRUD usando api rest
 <ul>
   <li><a href="https://spring.io/projects/spring-boot">Spring Boot</a></li>
   <li><a href="https://www.postgresql.org/download/">Postgresql</a></li>
-  <li>Swagger para documentar el servicio
-<a href="https://swagger.io/">Swagger</a>
+  <li>
+<a href="https://swagger.io/">Swagger para documentar el servicio</a>
 </li>
 </ul>  
 
