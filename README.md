@@ -20,8 +20,6 @@ Este proyecto es una implementación CRUD usando api rest
  Crear la base de datos reba, elegir nombre de usuario y contraseña y agregarlo en las properties .
  
  ![image](https://user-images.githubusercontent.com/18425978/219196594-78c541c4-435d-4b3d-aabb-007975498a84.png)
- 
- ![image](https://user-images.githubusercontent.com/18425978/219199609-2f67fd47-5261-4271-baa0-87419c89f9b7.png)
 
 
  
