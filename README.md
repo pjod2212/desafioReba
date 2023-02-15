@@ -5,9 +5,10 @@ Este proyecto es una implementación CRUD usando api rest
 
 # Tecnologías utilizadas
 
-
 <a href="https://spring.io/projects/spring-boot">Spring Boot</a>
-
+<a href="https://www.postgresql.org/download/">Postgresql</a>
+Swagger para documentar el servicio
+<a href="https://swagger.io/">Swagger</a>
 
 # Pasos para ejecutar de forma local
 
