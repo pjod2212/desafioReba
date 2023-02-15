@@ -13,6 +13,9 @@ Este proyecto es una implementación CRUD usando api rest
 
  Configurar la conexión de la base de datos, utilice dbeaver pero puede hacerse con pgadmin
  
+ ![image](https://user-images.githubusercontent.com/18425978/219192866-5cb7dffa-734c-457d-878a-62428f12e602.png)
+
+ 
  
  
  
