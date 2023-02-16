@@ -30,12 +30,12 @@ Este proyecto es una implementación CRUD usando api rest
 
  
  <dl>  
-  <dd>Ejemplo de properties para la config de base de datos</dd>
-  <dt>DATA_SOURCE_PASSWORD=admin</dt>
-  <dt> JPA_SHOW_SQL=true</dt>
-  <dt> DATA_SOURCE_USERNAME=postgres</dt>
-  <dt> POSTGRESQL_DB=reba</dt>
-   <dt>POSTGRESQL_IP=localhost:5432</dt>
+  <dt>Ejemplo de properties para la config de base de datos</dt>
+  <dd>DATA_SOURCE_PASSWORD=admin</dd>
+  <dd> JPA_SHOW_SQL=true</dd>
+  <dd> DATA_SOURCE_USERNAME=postgres</dd>
+  <dd> POSTGRESQL_DB=reba</dd>
+   <dd>POSTGRESQL_IP=localhost:5432</dd>
 </dl>
  
 
