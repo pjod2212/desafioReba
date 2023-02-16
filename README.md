@@ -27,6 +27,15 @@ Este proyecto es una implementación CRUD usando api rest
  Crear la base de datos reba, elegir nombre de usuario, contraseña y agregarlo en las properties .
  
  ![image](https://user-images.githubusercontent.com/18425978/219196594-78c541c4-435d-4b3d-aabb-007975498a84.png)
+ 
+ 
+ Ejemplo de properties para la config de base de datos
+ 
+ DATA_SOURCE_PASSWORD=admin
+ DATA_SOURCE_USERNAME=postgres
+ JPA_SHOW_SQL=true
+ POSTGRESQL_DB=reba
+ POSTGRESQL_IP=localhost:5432
 
 
  
