@@ -150,5 +150,20 @@ public class PersonaRest {
 			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 		}
 	}
-
+	
+	
+	@ApiOperation(value = "Obtener stats de cantidad de personas por paises", response = String.class)
+	@ApiResponses(value = { @ApiResponse(code = 200, message = "Procesado correctamente"),
+			@ApiResponse(code = 400, message = "Error al intentar obtener el recurso"),
+			@ApiResponse(code = 401, message = "Sin Autorización"),
+			@ApiResponse(code = 403, message = "No tiene permisos para acceder a este recurso"),
+			@ApiResponse(code = 404, message = "Error, no existe el recurso") })
+	@GetMapping("/stats")
+	public ResponseEntity<?> stats() {
+		try {			
+			return new ResponseEntity<>(personaService.stats(),HttpStatus.OK);
+		} catch (NoSuchElementException e) {
+			return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+		}
+	}
 }
