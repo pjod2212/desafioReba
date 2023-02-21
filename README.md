@@ -47,7 +47,8 @@ Clonear el proyecto , importarlo como proyecto maven y correrlo desde el branch 
 Los servicios se pueden correr desde http://localhost:8080/api/swagger-ui.html
 
  
-# Desarrollador - Pablo Donati
+# Desarrollador
+Pablo Donati
 
  
  
