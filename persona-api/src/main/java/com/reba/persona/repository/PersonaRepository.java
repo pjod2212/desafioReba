@@ -12,8 +12,6 @@ import com.reba.persona.entity.Persona;
 
 @Repository
 public interface PersonaRepository extends JpaRepository<Persona, Integer> {
-	@Query(value = "select count(*) from persona",nativeQuery = true)
-	Integer cantPersonas();
 	
 	@Query(value = "select  pa.nombre, count(per.nombre) * 100 / (select count(*) from persona) from persona per join pais pa on pa.id_pais = per.pais_id_pais group by pa.nombre",nativeQuery = true)
 	List<Object[]> cantPersonasPorPaises();
