@@ -14,8 +14,8 @@ public class PersonaService {
 
 	@Autowired
 	PersonaRepository personaRepository;
-	
-	public List<Persona> listarPersonas(){
+
+	public List<Persona> listarPersonas() {
 		return personaRepository.findAll();
 	}
 
@@ -24,10 +24,7 @@ public class PersonaService {
 	}
 
 	public Persona guardarPersona(Persona persona) {
-//		Optional.ofNullable(personaRepository.findByNroDocumentoPais(persona)).ifPresent(p -> {
-//			throw new RuntimeException("La persona ya existe");
-//		});
-		// Optional.ofNullable(persona.getEdad());
+
 		if (persona.getEdad() < 18) {
 			throw new RuntimeException("No puede ingresar una persona menor a 18 años");
 		}

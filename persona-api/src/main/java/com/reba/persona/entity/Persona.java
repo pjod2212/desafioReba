@@ -10,7 +10,20 @@ import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Min;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Builder
 @Entity
 @Table(name = "persona", uniqueConstraints = @UniqueConstraint(name = "id_persona", columnNames = { "nro_documento",
 		"pais_id_pais" ,"tipo_documento_id_tipo_documento"}))
@@ -24,6 +37,7 @@ public class Persona implements Serializable {
 	@Id
 	@Column(name = "id_persona")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@JsonIgnore
 	private long id;
 
 	@Column(name = "nombre")
@@ -36,6 +50,7 @@ public class Persona implements Serializable {
 	private Integer nroDocumento;
 	
 	@Column(name = "edad")
+    @Min(value = 18, message = "La edad no debe ser menor a 18")
 	private Integer edad;
 
 	@OneToOne
@@ -43,72 +58,10 @@ public class Persona implements Serializable {
 	
 	@OneToOne
 	private TipoDocumento tipoDocumento;
-
+	
 	@Column(name = "email")
+	@Email(message = "Formato de mail debe ser x@x.xxx")
 	private String email;
 
-	public long getId() {
-		return id;
-	}
-
-	public void setId(long id) {
-		this.id = id;
-	}
-
-	public String getNombre() {
-		return nombre;
-	}
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-	public String getApellido() {
-		return apellido;
-	}
-
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
-	}
-
-	public Integer getNroDocumento() {
-		return nroDocumento;
-	}
-
-	public void setNroDocumento(Integer nroDocumento) {
-		this.nroDocumento = nroDocumento;
-	}
-
-	public Pais getPais() {
-		return pais;
-	}
-
-	public void setPais(Pais pais) {
-		this.pais = pais;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public TipoDocumento getTipoDocumento() {
-		return tipoDocumento;
-	}
-
-	public void setTipoDocumento(TipoDocumento tipoDocumento) {
-		this.tipoDocumento = tipoDocumento;
-	}
-
-	public Integer getEdad() {
-		return edad;
-	}
-
-	public void setEdad(Integer edad) {
-		this.edad = edad;
-	}	
-
+	
 }

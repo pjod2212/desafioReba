@@ -9,8 +9,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -21,21 +19,20 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 @Entity
-@Table(name = "tipo_documento")
-public class TipoDocumento implements  Serializable{
+@Table(name = "relacion")
+public class Relacion implements Serializable{
 	
-  	/**
+	   	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 5L;
+	private static final long serialVersionUID = 4L;
 
-	@Id
-    @Column(name="id_tipo_documento")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    
-	@JsonIgnore
-	@Column(name = "tipo_documento")
-	private String tipoDocumento;
-
+		@Id
+	    @Column(name="id_relacion")
+	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    private long id;
+	    
+	    @Column(name="tipo_relacion")    
+	    private String tipoRelacion;
+	    
 }
