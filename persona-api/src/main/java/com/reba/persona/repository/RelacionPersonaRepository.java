@@ -14,5 +14,5 @@ public interface RelacionPersonaRepository extends JpaRepository<RelacionPersona
 	
 	Optional<RelacionPersona> findByPersona1AndPersona2AndRelacionIsNot(
 			Persona persona1,Persona persona2,Relacion padre);
-	
+
 }
