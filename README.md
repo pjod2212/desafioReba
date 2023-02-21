@@ -11,12 +11,17 @@ Este proyecto es una implementación CRUD usando api rest
   <li>
 <a href="https://swagger.io/">Swagger para documentar el servicio</a>
 </li>
+<li>
+<a href="https://projectlombok.org/">Lombok</a>
+</li>
 </ul>  
 
 
 
 
 # Pasos para ejecutar de forma local
+
+ Para que funcione lombok , ir a donde esta la carpeta .m2 ( ej C:\Users\Pablo_Donati\.m2\repository\org\projectlombok\lombok\1.18.20) ejecutar el jar y reiniciar el   ide que estes usando.
 
  Configurar la conexión de la base de datos, utilice dbeaver pero puede hacerse con pgadmin.
  
@@ -38,7 +43,8 @@ Este proyecto es una implementación CRUD usando api rest
    <dd>POSTGRESQL_IP=localhost:5432</dd>
 </dl>
  
-
+Clonear el proyecto , importarlo como proyecto maven y correrlo.
+Los servicios se pueden correr desde http://localhost:8080/api/swagger-ui.html
 
  
 
