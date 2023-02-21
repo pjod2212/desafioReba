@@ -15,6 +15,7 @@ import org.springframework.data.jpa.provider.HibernateUtils;
 import org.springframework.stereotype.Service;
 
 import com.reba.persona.entity.Persona;
+import com.reba.persona.entity.Stats;
 import com.reba.persona.repository.PersonaRepository;
 
 @Service
@@ -43,7 +44,7 @@ public class PersonaService {
 		personaRepository.deleteById(id);
 	}
 	
-	public List<Object[]> stats() {
+	public List<Map<String,Double>> stats() {
 		return personaRepository.cantPersonasPorPaises();
 		
 	}
